@@ -8,7 +8,8 @@ const chat = require('./functionalities/chat')
 
 app.use(bodyParser.json())
 
-const whitelist = ['http://localhost:3001', 'http://localhost:3000', 'https://muthur.herokuapp.com']
+const whitelist = ['http://localhost:3001', 'http://localhost:3000', 'https://muthursface.herokuapp.com/']
+
 const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
